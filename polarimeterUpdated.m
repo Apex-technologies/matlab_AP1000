@@ -14,7 +14,7 @@ classdef polarimeterUpdated < AP1000Updated
     
     methods
     
-        function obj2 = polarimetrUpdated(SlotNumber)
+        function obj2 = polarimeterUpdated(SlotNumber)
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
             obj2.GetPowerdBm;
@@ -31,7 +31,7 @@ classdef polarimeterUpdated < AP1000Updated
         end
         
         function powerdBm=GetPowerdBm(obj2)
-            %Optical power in Dbm
+            %Gets the Optical power in Dbm
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
             Command = "POL["+str2num(nn)+"]:DBM?";
@@ -40,7 +40,7 @@ classdef polarimeterUpdated < AP1000Updated
         end
         
         function powermw=GetPowerMW(obj2)
-            %Optical power in mW
+            %Gets the Optical power in mW
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
             Command = "POL["+str2num(nn)+"]:MW?";
@@ -88,10 +88,9 @@ classdef polarimeterUpdated < AP1000Updated
         
         function SOP=GetStateOfPolarization(obj2)
             %gets states of polarization
-            %S0
-            %S1
-            %S2
-            %S3
+            % format of the response is as follows 
+            %S0 S1 S2 S3
+           
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
             Command = "POL["+str2num(nn)+"]:SOP?";
@@ -101,10 +100,8 @@ classdef polarimeterUpdated < AP1000Updated
         
         function raw=GetRawDigitalValues(obj2)
             %gets the raw digital values
-            %raw value of channel 0
-            %raw value of channel 1
-            %raw value of channel 2
-            %raw value of channel 3
+            %the response is in the following format
+            % channel0 channel1 channel2 channel3
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
             Command = "POL["+str2num(nn)+"]:RAW4?";
