@@ -1,4 +1,4 @@
-Matlab library for controlling Aex AP1000
+Matlab library for controlling Apex AP1000
 
 1.Download the package matlab_AP1000
 
