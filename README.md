@@ -1,6 +1,7 @@
 Matlab library for controlling Aex AP1000
 
 1.Download the package matlab_AP1000
+
 2.Unzip it and move it into the folder of your Matlab project.
 
 
