@@ -14,4 +14,7 @@ Using the package
   2.Class polarimeterUpdated 
         This class is used for controlling the polarimeter module of AP1000.
         
+  3.Class EDFAUpdated 
+        This class is used for controlling the EDFA module of AP1000.      
+        
         
