@@ -21,3 +21,10 @@ Using the package
         This class is used for controlling the filter module of AP1000.
         
         
+5.Class PowermeterUpdated
+        This class is used for controlling the powermeter module of AP1000. 
+        
+6.5.Class TLSUpdated
+        This class is used for controlling the TLS module of AP1000.      
+        
+Note- not all functions have been implemented in this library. Please use the AP1000 communications manual and the functions already implemented here as examples for writing other functions.        
