@@ -1,4 +1,4 @@
-classdef AttunatorUpdated < AP1000Updated
+classdef AttenuatorUpdated < AP1000Updated
     
     properties
         Wavelength
@@ -7,7 +7,7 @@ classdef AttunatorUpdated < AP1000Updated
     
     methods
     
-        function obj4 = AttunatorUpdated(SlotNumber)
+        function obj4 = AttenuatorUpdated(SlotNumber)
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
             obj4.GetPower;
@@ -111,7 +111,7 @@ classdef AttunatorUpdated < AP1000Updated
             fprintf(obj4.Session, Command);
           end
         
-            function attnuation1=SetAttenuation(obj4)
+            function attenuation1=SetAttenuation(obj4)
            %Sets the optical attenuation of the module to the specified value..
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
