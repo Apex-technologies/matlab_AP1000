@@ -33,4 +33,4 @@ Using the package
 8.Class DFBUpdated
         This class is used for controlling the DFB module of AP1000.
         
-Note- not all functions have been implemented in this library. Please use the AP1000 communications manual and the functions already implemented here as examples for writing other functions.        
+Note- not all functions have been implemented in this library. Please use the AP1000 communications interface manual and the functions already implemented here as examples for writing other functions.        
