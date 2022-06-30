@@ -36,7 +36,7 @@ classdef PowermeterUpdated < AP1000Updated
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
             setaverage=input('enter the desired averaging time','s');
-            Command = "POW["+num2str(nn)+"]:AVG"+num2str(setaverage);
+            Command = "POW["+num2str(nn)+"]:SETAVERAGE"+num2str(setaverage);
             fprintf(obj5.Session, Command);
         end
         
@@ -55,7 +55,7 @@ classdef PowermeterUpdated < AP1000Updated
             %Returns the averaging time for the module.
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
-            Command = "POW["+num2str(nn)+"]:AVG?";
+            Command = "POW["+num2str(nn)+"]:GETAVERAGE";
             fprintf(obj5.Session, Command);
             powermeterIndex = fscanf(obj5.Session);
             fprintf('%s\n',powermeterIndex);
