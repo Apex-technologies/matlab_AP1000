@@ -27,7 +27,7 @@ classdef AttenuatorUpdated < AP1000Updated
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
             Command = "ATT["+num2str(nn)+"]:POW?";
-            fprintf(obj3.Session, Command);
+            fprintf(obj4.Session, Command);
             pow = fscanf(obj4.Session);
             fprintf('%s\n',pow);
         end 
@@ -79,7 +79,7 @@ classdef AttenuatorUpdated < AP1000Updated
             fprintf('%s\n',powersetstatus);
           end
         
-          function attenuation=GetAttenuation(obj3)     
+          function attenuation=GetAttenuation(obj4)     
             %Returns the optical attenuation of the module to the specified value.
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
