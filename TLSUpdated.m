@@ -19,7 +19,6 @@ classdef TLSUpdated < AP1000Updated
             obj6.GetMinWavelength;
             obj6.GetMaxWavelength;
             obj6.Setwavelength;
-            obj6.Getwavelength;
             obj6.RepeatSweep;
             obj6.SingleSweep;
             obj6.SweepMode;
