@@ -62,7 +62,7 @@ classdef filterUpdated < AP1000Updated
             %returns max frequency of the filter in GHz
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
-            Command = "FLT["+num2str(nn)+"]:FRMAX??";
+            Command = "FLT["+num2str(nn)+"]:FRMAX?";
             fprintf(obj3.Session, Command);
             maxfreq = fscanf(obj3.Session);
             fprintf('%s\n',maxfreq);
@@ -72,7 +72,7 @@ classdef filterUpdated < AP1000Updated
             %returns min frequency of the filter in GHz
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
-            Command = "FLT["+num2str(nn)+"]:FRMIN??";
+            Command = "FLT["+num2str(nn)+"]:FRMIN?";
             fprintf(obj3.Session, Command);
             minfreq = fscanf(obj3.Session);
             fprintf('%s\n',minfreq);
@@ -82,7 +82,7 @@ classdef filterUpdated < AP1000Updated
             %returns min wavelength of the filter in nm
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
-            Command = "FLT["+num2str(nn)+"]:WLMIN??";
+            Command = "FLT["+num2str(nn)+"]:WLMIN?";
             fprintf(obj3.Session, Command);
             minwave = fscanf(obj3.Session);
             fprintf('%s\n',minwave);
@@ -92,7 +92,7 @@ classdef filterUpdated < AP1000Updated
             %returns max wavelength of the filter in nm
             SlotNumber=input('enter the slot number','s');
             nn=SlotNumber;
-            Command = "FLT["+num2str(nn)+"]:WLMAX??";
+            Command = "FLT["+num2str(nn)+"]:WLMAX?";
             fprintf(obj3.Session, Command);
             maxwave = fscanf(obj3.Session);
             fprintf('%s\n',maxwave);
