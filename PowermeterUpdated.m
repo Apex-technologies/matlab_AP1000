@@ -48,6 +48,7 @@ classdef PowermeterUpdated < AP1000Updated
             Command = "POW["+num2str(nn)+"]:MW["+num2str(channel_number)+"]?";
             fprintf(obj5.Session, Command);
             pow1 = fscanf(obj5.Session);
+            format longeng
             fprintf('%s\n',pow1);
         end
         
@@ -60,51 +61,7 @@ classdef PowermeterUpdated < AP1000Updated
             powermeterIndex = fscanf(obj5.Session);
             fprintf('%s\n',powermeterIndex);
         end
-        
-          function POW1=GetmaxPow(obj5)
-           %Returns the maximum value of the MIN/MAX mode seeing on the specified channel in mW.
-           SlotNumber=input('enter the slot number','s');
-            nn=SlotNumber;
-            channel_number=input('enter the channel number','s');
-            Command = "POW["+num2str(nn)+"]:MAXMW["+num2str(channel_number)+"]?";
-            fprintf(obj5.Session, Command);
-            pow2 = fscanf(obj5.Session);
-            fprintf('%s\n',pow2);
-        end
-        
-           function POW2=GetmaxPower(obj5)
-           %Returns the maximum value of the MIN/MAX mode seeing on the specified channel in dBm.
-           SlotNumber=input('enter the slot number','s');
-            nn=SlotNumber;
-            channel_number=input('enter the channel number','s');
-            Command = "POW["+num2str(nn)+"]:MAXDBM["+num2str(channel_number)+"]?";
-            fprintf(obj5.Session, Command);
-            pow2 = fscanf(obj5.Session);
-            fprintf('%s\n',pow2);
-        end
-        
-          function POW3=GetminPower(obj5)
-           %Returns the maximum value of the MIN/MAX mode seeing on the specified channel in dBm.
-           SlotNumber=input('enter the slot number','s');
-            nn=SlotNumber;
-            channel_number=input('enter the channel number','s');
-            Command = "POW["+num2str(nn)+"]:MINDBM["+num2str(channel_number)+"]?";
-            fprintf(obj5.Session, Command);
-            pow3 = fscanf(obj5.Session);
-            fprintf('%s\n',pow3);
-        end
-        
-           function POW1=GetminPow(obj5)
-           %Returns the maximum value of the MIN/MAX mode seeing on the specified channel in mW.
-           SlotNumber=input('enter the slot number','s');
-            nn=SlotNumber;
-            channel_number=input('enter the channel number','s');
-            Command = "POW["+num2str(nn)+"]:MINMW["+num2str(channel_number)+"]?";
-            fprintf(obj5.Session, Command);
-            pow4 = fscanf(obj5.Session);
-            fprintf('%s\n',pow4);
-           end    
-           
+                  
     end    
         
 end    
