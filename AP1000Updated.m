@@ -38,7 +38,7 @@ classdef AP1000Updated < handle
 	      function obj = AP1000Updated(IPaddress,PortNumber)
 	           % Initiates a new TCP/IP connection specified by resourceString IP address and port number. 
              % IPAddress = '192.168.1.52'; 
-             obj.Session = tcpip('192.168.1.32',5900);
+             obj.Session = tcpip('192.168.1.32',5900);   %please replace the ip address string with the ip address of your apex device in this line
 	           
 	           % Set properties for reading the data if needed  
 	           %set(AP1000_APEX, 'InputBufferSize', 200);  % Specify the size of the input buffer in bytes for reading 
