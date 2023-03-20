@@ -8,6 +8,8 @@ Matlab library for controlling Apex AP1000
 
 Using the package
 
+Class AP1000Updated is the superclass and will need to be run first to connect to the AP1000.
+
   1.Class AP1000Updated methods and properties
         AP1000Updated() opens the connection with the mainframe.
         Please enter the IP adress of your device in the line obj.Session = tcpip('192.168.1.49',5900); of the function obj = AP1000Updated(IPaddress,PortNumber)
