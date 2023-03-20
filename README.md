@@ -10,6 +10,7 @@ Using the package
 
   1.Class AP1000Updated methods and properties
         AP1000Updated() opens the connection with the mainframe.
+        Please enter the IP adress of your device in the line obj.Session = tcpip('192.168.1.49',5900); of the function obj = AP1000Updated(IPaddress,PortNumber)
         
   2.Class polarimeterUpdated 
         This class is used for controlling the polarimeter module of AP1000.
@@ -34,3 +35,5 @@ Using the package
         This class is used for controlling the DFB module of AP1000.
         
 Note- not all functions have been implemented in this library. Please use the AP1000 communications interface manual and the functions already implemented here as examples for writing other functions.        
+
+use " format longeng " inorder to get data in the scientific notation where necessary
