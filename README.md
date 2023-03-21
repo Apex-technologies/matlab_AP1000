@@ -9,6 +9,7 @@ Matlab library for controlling Apex AP1000
 Using the package
 
 Class AP1000Updated is the superclass and will need to be run first to connect to the AP1000.
+While running the matlab drivers please assign the corresponding slot numbers to the modules as those assigned on the AP1000.
 
   1.Class AP1000Updated methods and properties
         AP1000Updated() opens the connection with the mainframe.
